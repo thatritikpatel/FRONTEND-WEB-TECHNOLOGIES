@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>
+	const getData = ()=>{
+		//ajax request sending code
+		return new Promise((resolve,reject)=>{	
+			resolve('some data found');
+			//reject('some error ....')
+		});
+	};	
+
+
+	/*
+	getData().then(data=>{
+		console.log(data);
+	},err=>{
+		console.log(err);	
+	});*/
+
+	getData().then(data=>{
+		console.log(data);
+	}).catch(err=>{
+		console.log(err);	
+	});
+
+
+
+  </script>
+ </body>
+</html>

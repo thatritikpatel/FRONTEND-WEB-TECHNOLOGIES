@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			#a{
+				width: 300px;
+				margin: 100px auto;
+			}
+
+			.x{
+				background-color: #555;
+				color: #fff;
+				border: 1px solid #eee;	
+			}
+
+			li{
+				background-color: #fff;
+				color: #555;
+				border: 1px solid #eee;
+				font-family: arial;
+				padding: 5px 8px;
+				list-style: none;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<ul>
+				<li>Monday</li>
+				<li>Tuesday</li>
+				<li>Wednesday</li>
+				<li>Thursday</li>
+				<li>Friday</li>
+			</ul>
+
+			<script>
+				var lis = document.querySelectorAll('li');
+
+				//console.log(lis);
+
+				lis.forEach(li=>{
+					li.addEventListener('click',e=>{
+						lis.forEach(elm=>{elm.classList.remove('x');})
+						e.target.classList.add('x');
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>

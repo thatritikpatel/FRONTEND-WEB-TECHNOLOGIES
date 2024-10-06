@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>
+	const request = new XMLHttpRequest();
+
+	request.addEventListener('readystatechange',()=>{
+		if(request.readyState==4 && request.status==200){
+			//console.log(request.responseText);
+			//console.log(JSON.parse(request.responseText));
+
+			//const resp = request.responseText;
+			const resp = JSON.parse(request.responseText);
+			for(tmp in resp){
+				console.log(tmp,resp[tmp]);
+			}
+		}
+	});
+
+	request.open('GET','https://jsonplaceholder.typicode.com/todos/1');
+	request.send();
+
+  </script>
+ </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<img src="images/1.jpg" onclick="changeImage()" id="x">
+
+
+		<script>
+			var m = document.getElementById('x');
+			var arr = ['2.png','3.png','4.png','5.jpg','1.jpg'];
+			var i = 0;	
+
+			function changeImage(){
+				m.src = 'images/'+arr[i];
+				i++;
+				if(i==arr.length){
+					i=0;
+				}
+			}
+		</script>
+	</body>
+</html>

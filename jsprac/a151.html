@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			#x{
+				border: 1px solid #777;
+				width: 70%;
+				margin: 20px auto;
+			}
+
+			td{
+				border: 1px solid #777;
+			}
+		</style>
+	</head>
+	<body>
+		<p>para</p>
+		<h1>heading</h1>
+		<i></i>
+		<table id="x"></table>
+
+		<script>
+			var p = document.querySelector('h1');
+			var tbl = document.getElementById('x');
+
+			//console.log(p,typeof p);
+			//alert(p,typeof p);
+			
+			var i=0;
+			for(prop in p){
+				var row = tbl.insertRow(i++);
+				
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				
+				cell1.innerHTML = i+'.';
+				cell2.innerHTML = prop;
+				cell3.innerHTML = p[prop];
+			}
+		</script>
+	</body>
+</html>

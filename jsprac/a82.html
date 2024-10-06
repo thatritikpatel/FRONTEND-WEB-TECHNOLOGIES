@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<input type="text" onkeyup="keyUp(this)">
+		<br><br>
+		<span id="x"></span>
+
+		<script>
+			var x = document.getElementById('x');
+			
+			function keyUp(fld){
+				x.innerHTML = fld.value;
+			}
+		</script>
+	</body>
+</html>

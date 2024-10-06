@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<select id="x" onchange="showSelected(this)">
+			<option>Select</option>
+			<option>Jabalpur</option>
+			<option>Jagdalpur</option>
+			<option>Jaipur</option>
+			<option>Jodhpur</option>
+			<option>Nagpur</option>
+		</select>
+
+		<script>
+			function showSelected(curElm){
+				//alert(curElm.value);
+				alert(curElm.selectedIndex);
+			}
+		</script>
+	</body>
+</html>

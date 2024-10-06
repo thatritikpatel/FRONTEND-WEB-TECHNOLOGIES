@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<a href="a12.html">aaa1</a><br>
+		<a name="x">aaa2</a><br>
+		<a href="a13.html">aaa3</a><br>
+		<a name="y">aaa4</a><br>
+		<a name="f">aaa5</a><br>
+		<a href="a15.html">aaa6</a><br>
+		<a name="z">aaa7</a><br>
+
+		<script>
+			//var g = document.getElementsByTagName('a');
+			//var g = document.querySelectorAll('[href]');
+			//var g = document.querySelectorAll('[name]');
+			
+			//var g = document.anchors;
+			//var g = document.links;
+			
+			//alert(g.length);
+			
+			for(var i=0;i<g.length;i++){
+				alert(g[i].innerHTML);
+			}
+		</script>
+	</body>
+</html>

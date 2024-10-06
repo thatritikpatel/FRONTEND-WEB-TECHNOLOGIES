@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			#a{
+				border: 1px solid #777;
+				width: 50%;
+				margin: 20px auto;
+			}
+
+			td{
+				border: 1px solid #777;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="a"></table>
+
+
+		<script>
+			var tbl = document.getElementById('a');
+
+			var arr = [
+						{name:'ganesh',age:23,college:'GGITS'},
+						{name:'suresh',age:20,college:'JEC'},
+						{name:'vighnesh',age:24,college:'IITDM'},
+						{name:'rahul',age:55,college:'Congres'},
+					  ];
+			
+			var i = 0;
+			for(var obj of arr){
+				var row = tbl.insertRow(i++);
+				var j = 0;
+				for(var prop in obj){
+					var cell = row.insertCell(j++);
+					cell.innerHTML = obj[prop];
+				}
+			}
+		</script>
+	</body>
+</html>

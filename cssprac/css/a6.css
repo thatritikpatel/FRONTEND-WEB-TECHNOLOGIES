@@ -1,0 +1,13 @@
+#nm{
+	border: 1px solid #0e6903;
+	background-color: #f5fef5;
+	width: 300px;
+	text-align: center;
+	color: #0e6903;
+	font-family: verdana;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 0px auto;
+}

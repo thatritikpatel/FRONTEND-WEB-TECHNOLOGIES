@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Hello</title>	
+	</head>
+
+	<body>	
+
+		<script>
+			var records = [
+							{name:'mohan',age:20},
+							{name:'sohan',age:34},
+							{name:'rohan',age:28},
+							{name:'tohan',age:22},
+							{name:'gohan',age:30},
+							{name:'hohan',age:21},
+							{name:'iohan',age:26},
+						  ];
+
+			/*
+			var filtered = records.filter((rec)=>{
+												if(rec.age>25){
+													return rec;
+												}
+											});*/
+
+			/*
+			var filtered = records.filter((rec)=>{
+												return rec.age>25;
+											});*/
+
+			var filtered = records.filter(rec=>rec.age<25);
+
+			console.log(filtered);
+		</script>
+	</body>
+</html>

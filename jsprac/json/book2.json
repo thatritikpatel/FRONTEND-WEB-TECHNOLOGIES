@@ -1,0 +1,14 @@
+[
+   {
+	"title": "Django2",
+	"price": 1600
+   },
+   {
+	"title": "Python2",
+	"price": 3800
+   },
+   {
+	"title": "JavaScript2",
+	"price": 2000
+   }
+]

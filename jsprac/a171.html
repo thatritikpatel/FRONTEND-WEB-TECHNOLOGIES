@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			img{
+				height: 300px;
+				width: 400px;
+				position: absolute;
+			}
+
+			div{
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div>			
+			<img src="images/f1.png" id="a">
+			<img src="images/f2.png" id="b">
+			<img src="images/f3.png" id="c">
+			<img src="images/f4.png" id="d">			
+			<img src="images/f5.png" id="d">			
+			<img src="images/f6.png" id="d">			
+		</div>
+
+		<script>
+			var nodeList = document.querySelectorAll('img');
+			
+			var x = nodeList.length;
+			nodeList.forEach(node=>{node.style.zIndex = x--;});
+
+			
+			var i = 0;
+			
+			var intv = setInterval(disolve,100);
+
+			var op = 0.9;
+			function disolve(){
+				nodeList[i].style.opacity = op;
+				op -= 0.1;
+				if(op<0){
+					clearInterval(intv);
+					op = 0.9;
+					i++;
+					if(nodeList[i]){
+						intv = setInterval(disolve,100);
+					}else{
+						alert(i);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

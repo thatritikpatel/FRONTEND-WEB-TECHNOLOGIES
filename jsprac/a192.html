@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<form>
+			User Name: <input type="text" id="username"><br><br>
+			<input type="submit" value="Save">
+		</form>
+
+		<script>
+			var form = document.forms[0];
+
+			//console.log(form);
+
+			form.addEventListener('submit',(e)=>{
+				e.preventDefault();
+				console.log(e);
+			});
+		</script>
+	</body>
+</html>

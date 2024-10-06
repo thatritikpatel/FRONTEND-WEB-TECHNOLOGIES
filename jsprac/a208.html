@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Hello</title>	
+	</head>
+
+	<body>	
+
+		<script>
+			var records = [72,12,89,56,34,67];
+			
+			var res = records.reduce((acc,curr)=>{
+				if(curr<50){
+					acc++;
+				}
+
+				return acc;
+			},0);			
+			
+			
+
+			console.log(res);
+		</script>
+	</body>
+</html>

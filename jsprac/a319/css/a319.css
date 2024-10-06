@@ -1,0 +1,58 @@
+body{
+	font-family: arial;
+	color: #555;
+}
+
+#container{
+	width: 30%;
+	height: 520px;
+	border: 1px solid #aaa;
+	border-radius: 7px;
+	margin: 20px auto;
+}
+
+#header{
+	background-color: #eee;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #eee;
+	font-size: 32px;
+	font-weight: bold;
+	color: #777;
+}
+
+form input{
+	border: 1px solid #555;
+	padding: 5px 8px;
+	font-size: 22px;
+	border-radius: 5px;
+	margin-top: 15px;
+	width: 70%;
+}
+
+#city{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 28px;
+}
+
+#condition{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#temp{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 32px;
+}
+
+#detail{
+	background-color: #eee;
+	color: #777;
+}

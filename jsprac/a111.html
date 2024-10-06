@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		
+		<style>
+			#a{
+				border: 1px solid #999;
+				margin: 20px auto;
+				width: 50%;
+			}
+
+			td{
+				border: 1px solid #999;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Records" onclick="showRecords()"><br><br>
+
+		<table id="a">
+		</table>
+
+		<script>
+			var names = new Array('ram','sham','om');
+			var ages = new Array(12,9,7);
+			var phones = new Array('1111111111','2222222222','3333333333')
+
+			var recs = new Array(names,ages,phones);
+			var tbl = document.getElementById('a');
+			
+			function showRecords(){
+				for(var i=0;i<recs.length;i++){
+					var row = tbl.insertRow(i);
+					//alert(recs[i]);
+					for(var j=0;j<recs[i].length;j++){
+						var cell = row.insertCell(j);
+						cell.innerHTML = recs[i][j];
+						//alert(recs[i][j]);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

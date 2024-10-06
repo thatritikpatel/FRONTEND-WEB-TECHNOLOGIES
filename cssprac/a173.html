@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>CSS Examples</title>
+
+		<style>
+			#a{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				background-color: red;				
+				margin: 100px;				
+				transition: width 4s;
+				/* transition-timing-function: linear; */
+				/* transition-timing-function: ease; */ /*default*/
+				/* transition-timing-function: ease-in; */
+				/* transition-timing-function: ease-out; */
+				transition-timing-function: ease-in-out;
+			}
+
+			#a:hover{				
+				width: 700px;				
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div id="a"></div>
+		
+	</body>
+</html>

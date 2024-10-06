@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			.a{
+				font-size: 48px;
+				padding: 20px;
+				border: 1px solid #555;
+			}
+
+			.b{
+				border-color: #66ff33;
+				background-color: #f72454;
+				color: #fff;
+			}
+
+			.c{
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="w" class="a">some special error</p>
+		<p id="x" class="a b">experience the success</p>
+		<p id="y" class="a">error in my code</p>
+		<p id="z" class="a b c">success is sure</p>
+
+		<script>
+			var w = document.querySelector('#w');
+			var x = document.querySelector('#x');
+			var y = document.querySelector('#y');
+			var z = document.querySelector('#z');
+
+			//Case 2:
+			/*
+			console.log(w.classList);
+			console.log(x.classList);
+			console.log(y.classList);
+			console.log(z.classList);
+			
+			console.log(typeof w.classList);
+			console.log(typeof x.classList);
+			console.log(typeof y.classList);
+			console.log(typeof z.classList);
+			*/
+
+
+			//Case 1:
+			/*
+			console.log(w.className);
+			console.log(x.className);
+			console.log(y.className);
+			console.log(z.className);
+
+			console.log(typeof w.className);
+			console.log(typeof x.className);
+			console.log(typeof y.className);
+			console.log(typeof z.className);
+			*/
+		</script>
+	</body>
+</html>

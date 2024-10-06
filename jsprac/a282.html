@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	class Student{
+		constructor(name,email,password,degree,branch,semester){
+			this.name = name;
+			this.email = email;
+			this.password = password;
+			this.degree = degree;
+			this.branch = branch;
+			this.semester = semester;
+		}
+
+		login(){
+			console.log(`${this.name} is logging in`)
+		}
+
+		logout(){
+			console.log(`${this.name} is logging out`)
+		}
+	}
+
+	let std = new Student('Mohan Pratap','mohanp@gmail.com','123456','BTech','CS','1st');
+
+	console.log(std);
+	std.login();
+	std.logout();
+
+	class Teacher{
+		constructor(name,email,password,qualification,experience,salary){
+			this.name = name;
+			this.email = email;
+			this.password = password;
+			this.qualification = qualification;
+			this.experience = experience;
+			this.salary = salary;
+		}
+
+		login(){
+			console.log(`${this.name} is logging in`)
+		}
+
+		logout(){
+			console.log(`${this.name} is logging out`)
+		}
+	}
+
+	let tch = new Teacher('N Reddy','nreddy@gmail.com','654321','PHd',12,2400000);
+	console.log(tch);
+
+	tch.login();
+	tch.logout();
+
+  </script>
+ </body>
+</html>

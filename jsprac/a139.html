@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			#a{
+				border: 1px solid #777;
+				width: 90%;
+				height: 500px;
+				margin: 20px auto;
+				position: relative;
+			}
+
+			#b{
+				border: 1px solid red;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a"></div>
+
+		<script>
+			var a = document.getElementById('a');
+
+			var dv = document.createElement('div');
+			dv.id = 'b';
+			
+			var i=0,j=0,k=0;
+			a.onclick = function(){
+							a.appendChild(dv);
+							a.onmousemove = function(e){
+												dv.style.left = e.offsetX+20+'px';
+												dv.style.top = e.offsetY+20+'px';
+												dv.style.backgroundColor = `rgb(${i},${j},${k})`;
+												i++;j++;k++;
+												if(i==255){
+													i=0;
+													j=0;
+													k=0;
+												}
+											};
+						};
+
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	class Student{
+		constructor(name,age){
+			this.name=name;
+			this.age=age;
+		}
+
+		addCollege(college){
+			this.college = college;
+		}
+		
+		login(){
+			console.log('######');
+		}
+
+		logout(){
+			console.log('$$$$$$');
+		}
+	}
+
+	let st1 = new Student('om',12);
+	let st2 = new Student('vijay',22);
+
+	console.log(st1.name,st1.age);
+	console.log(st2.name,st2.age);
+
+	console.log(st1.toString());
+	console.log(st2.toString());
+
+	st1.login();
+	st2.login();
+
+	st1.logout();
+	st2.logout();
+
+	st1.addCollege('JEC');
+
+	console.log(st1);
+	console.log(st2);
+  </script>
+ </body>
+</html>

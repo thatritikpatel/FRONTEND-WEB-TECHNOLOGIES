@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<textarea onkeyup="keyUp()"></textarea>
+		<br><br>
+		<span id="x">0</span>
+
+		<script>
+			var x = document.getElementById('x');
+			
+			var i = 1;
+			function keyUp(){
+				x.innerHTML = i++;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			#a{
+				border: 1px solid #777;
+				width: 90%;
+				height: 500px;
+				margin: 20px auto;
+				position: relative;
+			}
+
+			.b{
+				border:  1px solid #777;
+				width: 1px;
+				height: 1px;
+				position: absolute;
+			}
+
+			#t{
+				margin: 10px auto;
+				width: 90%;
+			}
+
+			.z{
+				border:  1px solid #999;
+				border-radius: 10px;
+				width: 50px;
+				height: 50px;
+				display: inline-block;
+			}
+							
+			#y1{ background-color: #ff1f0d; }
+			#y2{ background-color: #05c90f; }
+			#y3{ background-color: #0209f7; }
+			#y4{ background-color: #fcfc14; }
+
+			#clr{
+				border: 1px solid #999;
+				cursor: pointer;
+				padding: 5px 12px;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="t">
+			<span class="z" id="y1"></span>	
+			<span class="z" id="y2"></span>	
+			<span class="z" id="y3"></span>	
+			<span class="z" id="y4"></span>	
+			<span id="clr">Clear</span>
+		</div>
+
+		<div id="a"></div>
+		
+
+		<script>
+			var dv;
+			var a = document.getElementById('a');
+			var clr = document.getElementById('clr');
+			clr.onclick = function(){ a.innerHTML = '';}
+
+			var arr = ['#ff1f0d','#05c90f','#0209f7','#fcfc14'];
+			
+			var i = 0;
+			var color = '#777';
+			var x = document.querySelectorAll('.z');
+			x.forEach(rec => { 
+								rec.clr = arr[i++]
+								rec.onclick = function(){
+												color = this.clr;	
+											  };	
+							 });
+
+			
+			a.onmousemove = function(e){
+								dv = document.createElement('div');
+								dv.className = 'b';
+								dv.style.borderColor = color;
+								a.appendChild(dv);
+								dv.style.left = e.offsetX+20+'px';
+								dv.style.top = e.offsetY+20+'px';
+							};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Hello</title>	
+	</head>
+
+	<body>	
+
+		<script>
+			var dv = document.querySelector('#box');
+			
+			var records = [56,23,45,32,12,37,41,19];
+
+			console.log(records);
+			
+			/*var filtered = records.filter((rec)=>{
+											if(rec>35){
+												return rec;
+											}
+										  });
+			*/
+
+			/*var filtered = records.filter((rec)=>{
+											return rec>35;
+										  });*/
+
+			var filtered = records.filter(rec=>rec>40);
+
+			
+			console.log(filtered);
+		</script>
+	</body>
+</html>

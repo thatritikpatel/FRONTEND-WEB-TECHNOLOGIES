@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	//Case 1:
+	/*
+	function Student(name,email){
+		this.name = name;
+		
+		this.email = email;
+		
+		this.login = function(){
+			console.log(`${this.name} has logged in...`);
+		};
+
+		this.logout = function(){
+			console.log(`${this.name} has logged out...`)
+		}
+	}
+
+	let st1 = new Student('om','om@gmail.com');
+	console.log(st1);
+
+	let st2 = new Student('ram','ram@gmail.com');
+	console.log(st2);
+	*/
+
+	//Case 2:
+
+	function Student(name,email){
+		this.name = name;		
+		this.email = email;		
+	}
+
+	Student.prototype.login = function(){
+		console.log(`${this.name} has logged in...`);
+	};
+
+	Student.prototype.logout = function(){
+		console.log(`${this.name} has logged out...`)
+	};
+
+	let st1 = new Student('om','om@gmail.com');
+	console.log(st1);
+
+	let st2 = new Student('ram','ram@gmail.com');
+	console.log(st2);
+
+
+
+
+  </script>
+ </body>
+</html>

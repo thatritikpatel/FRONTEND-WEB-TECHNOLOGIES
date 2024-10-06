@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1 id="a" class="x">Text 1</h1>
+		<h1 id="b" class="x">Text 2</h1>
+		<h1 id="c">Text 3</h1>
+		<h1 id="d">Text 4</h1>
+		<h1 id="e" class="x">Text 5</h1>
+		
+		<script>
+			var x = document.getElementsByClassName('x');
+			//alert(x);//HTMLCollection object
+			//alert(x.length);
+			alert(x[0].innerHTML)
+			alert(x[1].innerHTML)
+			alert(x[2].innerHTML)
+		</script>
+	</body>
+</html>

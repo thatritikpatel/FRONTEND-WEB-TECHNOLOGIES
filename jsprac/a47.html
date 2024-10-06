@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			table,td{
+				border: 1px solid #494949; 
+			}
+		</style>
+	</head>
+	<body>
+		<table id="city">
+		</table>
+		<br><br>
+		<input type="button" value="Show Cities" onclick="showCities()">
+
+
+		<script>
+			var arr = new Array('Jabalpur','Bhopal','Indore','Gwalior','Panna');
+
+			var tbl = document.getElementById('city');
+						
+			function showCities(){
+				for(var i=0;i<arr.length;i++){
+					var row = tbl.insertRow(i);
+					var cell = row.insertCell(0);
+
+					cell.innerHTML = arr[i];
+				}
+			}	
+		</script>
+	</body>
+</html>

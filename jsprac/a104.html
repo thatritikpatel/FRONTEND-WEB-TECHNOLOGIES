@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		Marks(%)?: <input type="number" id="x" style="width:70px">
+
+		<br><br>
+
+		<input type="button" onclick="showResult()" value="Submit">
+
+		<script>
+			var x = document.getElementById('x');
+
+			function showResult(){
+				var x = document.getElementById('x');
+				var val = x.value;
+				
+				if(val>=75){
+					console.log('D');
+				}else if(val>=60){
+					console.log('F');
+				}else if(val>=45){
+					console.log('S');
+				}else if(val>=33){
+					console.log('T');
+				}else if(val>=0){
+					console.log('Fail');
+				}else{
+					console.log('Invalid');
+				}
+			}
+		</script>
+	</body>
+</html>

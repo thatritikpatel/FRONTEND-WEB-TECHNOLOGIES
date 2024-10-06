@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<input type="button" value="Stop" onclick="stop()">
+		<input type="button" value="Start" onclick="start()">
+
+		<script>
+			var intv = setInterval(aaa,3000);
+			
+			function aaa(){
+				alert('hello...')
+			}
+
+			function stop(){
+				clearInterval(intv);
+			}
+
+			function start(){
+				intv = setInterval(aaa,3000);
+			}
+		</script>
+	</body>
+</html>

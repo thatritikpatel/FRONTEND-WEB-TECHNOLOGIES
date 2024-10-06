@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>CSS Examples</title>
+
+		<style>
+			#aa{
+				text-decoration: underline;
+			}
+
+			#bb{
+				text-decoration: overline; 
+			}
+
+			#cc{
+				text-decoration: line-through;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<span>mohan kumar</span><br><br>
+		
+		<span id="aa">mohan kumar</span><br><br>
+
+		<span id="bb">mohan kumar</span><br><br>
+
+		<span id="cc">mohan kumar</span><br><br>
+
+		<span id="dd" onmouseover="aaa()" onmouseout="bbb()">mohan kumar</span><br><br>
+		
+
+		<script>
+			var x = document.getElementById('dd');
+			
+			function aaa(){
+				x.style.textDecoration = 'underline';
+			}
+			
+			function bbb(){
+				x.style.textDecoration = 'none'; //<----------
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1 id="x">aaa</h1>
+
+		<script>
+			var addr = {
+							houseno:'212/a20',
+							city:'Jabalpur',
+							state:'MP',
+							pin:'482002'
+						  };
+
+			var x = {
+						name:'mohan',
+						age:12,
+						address: addr,
+						email:'mohan@gmail.com',
+						password:'3456',
+						mobiles: ['8888888888','9999999999','6767676767'],
+						login(){ //method
+								  console.log(`Name: ${this.name} Age: ${this.age} Current-Object: ${this}`);
+							   },
+						signup(){
+									console.log(`Email: ${this['email']}`);
+								}
+					};
+
+			console.log(x.address.city);			
+			console.log(x['address'].pin);			
+			console.log(x['address']['pin']);			
+			console.log(x.address['pin']);			
+			console.log(x.address.state);			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1 id="x"></h1>	
+
+		<script>
+			var x = document.getElementById('x');
+
+			//x.innerText = new Date();
+			//x.innerText = Date();
+
+			var date = new Date(); //1 Jan 1970 midnight 00:00 (1s=>1000ms)
+			//x.innerText = date;
+			//x.innerText = date.toString();
+			//x.innerText = date.getYear(); 
+			//Y2K  01-03-00 98-99-100-101--120
+			//x.innerText = date.getFullYear();
+			//x.innerText = date.getMonth(); //Month: 0-11
+
+			
+
+			//x.innerText = date.getDate();
+
+			//x.innerText = date.getHours();
+			//x.innerText = date.getMinutes();
+			//x.innerText = date.getSeconds();
+			//x.innerText = date.getMilliseconds(); //0-999  1:20:33 678
+			//x.innerText = date.getTime();
+			//x.innerText = date.getDay(); //0-6 0->Sunday 
+
+			
+
+			x.innerText = Date.now();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			.x{
+				font-size: 48px;
+			}
+
+			.y{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<span id="a" class="y">Some text to show the concept</span>
+
+		<script>
+			var a = document.querySelector('#a');
+
+			//console.log(a.classList);
+
+			a.addEventListener('click',()=>{a.classList.toggle('x');})
+
+			
+		</script>
+	</body>
+</html>

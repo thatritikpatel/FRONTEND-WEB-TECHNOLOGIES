@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			#x{
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/1d.png" id="x">
+
+		<script>
+			var x = document.getElementById('x');
+
+			x.onclick = diceRoller;			
+
+			function diceRoller(){
+				var rand = Math.random()*6;
+				var val = Math.trunc(rand)+1;
+				//x.src = 'images/'+val+'d.png';
+				x.src = `images/${val}d.png`;
+			}
+		</script>
+	</body>
+</html>

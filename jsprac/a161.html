@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		Min: <input type="text" id="min"><br><br>
+		Max: <input type="text" id="max"><br><br>
+
+		<input type="button" value="Generate Random Value" onclick="randrange()">
+		<br><br><br>
+
+		<h1 id="x"></h1>
+		
+		<script> 
+			var x = document.getElementById('x');
+
+			var minFld = document.getElementById('min');
+			var maxFld = document.getElementById('max');
+			
+			function randrange(){
+				var min = parseInt(minFld.value);
+				var max = parseInt(maxFld.value);
+				
+				var rand = Math.trunc(Math.random() * (max-min)) + min;
+
+				x.innerText = `Random Number(min-${min}/max-${max}): ${rand}`;
+			}
+		</script>
+	</body>
+</html>

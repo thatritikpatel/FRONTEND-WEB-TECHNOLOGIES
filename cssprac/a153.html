@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>CSS Examples</title>
+
+		<style>
+			#a{
+				border: 1px solid red;
+				width: 500px;
+				height: 500px;
+				position: relative;
+			}
+
+			#x{
+				width: 150px;
+				height: 150px;
+				background-color: red;
+				position: absolute;
+				top: 100px;
+				left: 100px;
+
+			}
+
+			#y{
+				width: 150px;
+				height: 150px;
+				background-color: blue;
+				position: absolute;
+				top: 170px;
+				left: 170px;
+				z-index: 1;
+			}
+
+			#z{
+				width: 150px;
+				height: 150px;
+				background-color: green;
+				position: absolute;
+				top: 240px;
+				left: 240px;
+				z-index: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="a">
+			<div id="x"></div>
+			<div id="y"></div>
+			<div id="z"></div>
+		</div>
+	</body>
+</html>

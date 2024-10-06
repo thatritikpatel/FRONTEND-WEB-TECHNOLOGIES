@@ -1,0 +1,70 @@
+Regular Expression(Regex)
+
+regex101.com
+
+pattern: /mohan/
+true:
+hello mohan ji
+hello mrmohanji how are u
+
+pattern: /^mohan$/
+false:
+hello mohan ji
+hello mrmohanji how are u
+true:
+mohan
+
+pattern: /^[a-z]$/
+false:
+hello mohan ji
+hello mrmohanji how are u
+true:
+m
+y
+
+pattern: /^[a-zA-Z ]$/
+false:
+hello mohan ji
+hello mrmohanji how are u
+true:
+m
+y
+
+pattern: /^[h-t]$/
+false:
+y
+g
+true:
+m
+s
+
+pattern: /^[a-z]{6,10}$/
+false:
+mohan
+mohanprasad
+true:
+mohanji
+
+pattern: /^[a-zA-Z0-9]{6,10}$/
+false:
+mohan
+mohanprasad
+mohan#
+true:
+mohanji23
+
+pattern: /^.{6,10}$/
+false:
+mohan
+mohanprasad
+true:
+moHa@ ji23
+
+pattern: /^.{6,}$/
+false:
+mohan
+true:
+moHa@ ji2398ayau_
+
+
+

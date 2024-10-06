@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<img src="images/2.png" id="x" onmouseover="imageOver(this)" onmouseout="imageOut(this)">
+
+		<br><br>
+
+		<span id="y">No Action</span>
+
+		<script>
+			var y = document.getElementById('y');
+
+			function imageOver(curElm){
+				y.innerHTML = 'Over';	
+			}
+
+			function imageOut(curElm){
+				y.innerHTML = 'Out';
+			}
+		</script>
+	</body>
+</html>

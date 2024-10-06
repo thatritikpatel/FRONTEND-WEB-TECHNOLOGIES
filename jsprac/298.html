@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>
+	const request = new XMLHttpRequest();
+	//readyState: 0
+	
+	request.open('GET','https://jsonplaceholder.typicode.com/todos/1');
+	//readyState: 1
+	
+	request.send();
+	//readyState: 3
+
+	//when response received 
+	//readyState: 4
+	
+	
+	console.log(request);
+	//ready-state: 0 1 2 3 4
+  </script>
+ </body>
+</html>

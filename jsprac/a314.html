@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+
+
+
+
+  <script>
+
+	//Case 5:
+	/*
+	fetch('https://jsonplaceholder.typicode.com/todos/1').then((response)=>{
+		return response.json();
+	}).then((data)=>{
+		console.log('success:',data);
+	}).catch((error)=>{
+		console.log('Rejected: ',error);
+	});*/
+
+
+	//Case 4:
+	/*
+	fetch('https://jsonplaceholder.typicode.com/todos/1').then((response)=>{
+		const data = response.json();
+		console.log(data);
+	}).catch((error)=>{
+		console.log('Rejected: ',error);
+	});*/
+	
+	//Case 3b:
+	/*
+	fetch('https://jsonplaceholder.typicode.com/todo/1').then((response)=>{
+		console.log('Resolved: ',response); //status:404
+	}).catch((error)=>{
+		console.log('Rejected: ',error);
+	});*/
+
+	
+	//Case 3a:
+	/*
+	fetch('https://jsonplaceholder.typicode.com/todos/1').then((response)=>{
+		console.log('Resolved: ',response); //status:200
+	}).catch((error)=>{
+		console.log('Rejected: ',error);
+	});*/
+
+	//Case 2:
+	/*
+	fetch('').then((response)=>{
+		console.log('resolve:response',response);
+	}).catch((err)=>{
+		console.log('error---',err);
+	});*/
+
+	//Case 1:
+	/*
+	let v = fetch('');
+	console.log('---------',v,'----------');
+	*/
+  </script>
+ </body>
+</html>

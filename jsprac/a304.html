@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <style>
+	#data_block,td,th{
+		border: 1px solid red;
+		min-height: 50px;
+	}
+
+  </style>
+ </head>
+ <body>
+  <table id="data_block">
+	<tr>
+		<th>Id</th>
+		<th>UserId</th>
+		<th>Title</th>
+		<th>Completed</th>
+	</tr>
+
+  </table>
+
+  <script>	
+	const data_block = document.querySelector('#data_block');
+
+	const getData = (responseHandler)=>{
+		const request = new XMLHttpRequest();
+
+		request.addEventListener('readystatechange',()=>{
+			if(request.readyState==4 && request.status==200){
+				const data = JSON.parse(request.responseText);
+				responseHandler(undefined,data);
+			}else if(request.readyState==4){
+				responseHandler('No data found...',undefined);
+			}
+		});
+
+		request.open('GET','https://jsonplaceholder.typicode.com/todos/');
+		request.send();
+	};
+	
+	getData((err,data)=>{
+		if(err){
+			console.log(err);
+		}else{
+			//console.log(data);
+			let index = 1;
+			for(i=0;i<data.length;i++){
+				let row = data_block.insertRow(index++);
+				let cellIndex = 0;
+				for(prop in data[i]){
+					let cell = row.insertCell(cellIndex++);
+					cell.innerHTML = data[i][prop]
+				}	
+			}
+		}
+	});	
+  </script>
+ </body>
+</html>

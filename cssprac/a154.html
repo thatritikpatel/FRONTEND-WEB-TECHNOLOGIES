@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>CSS Examples</title>
+
+		<style>
+			body{
+				font-family: verdana;
+			}
+
+			ul{
+				list-style-type: none;
+			}
+
+			#a{
+				border: 1px solid #ccc;				
+			}
+
+			.x{
+				border-left: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				display: inline-block;
+				padding: 5px 12px;
+				color: #575757;
+				background-color: #fff;
+				cursor: pointer;
+			}
+
+			.x:hover{
+				background-color: #575757;
+				color: #fff;
+			}
+
+			.y{
+				border: 1px solid #ccc;
+				padding: 5px 12px;
+				color: #575757;
+				background-color: #fff;
+				cursor: pointer;
+			}
+
+			.y:hover{
+				background-color: #575757;
+				color: #fff;
+			}
+
+			#p,#s{
+				position: relative;
+			}
+
+			#pr,#sr{
+				position: absolute;
+				top: 100%;
+				left: -44%;
+				visibility: hidden;
+			}
+
+			#p:hover #pr,#s:hover #sr{
+				visibility: visible;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<ul id="a">
+			<li class="x">Home</li>
+			<li class="x" id="p">
+				Products
+				<ul id="pr">
+					<li class="y">Samosa</li>
+					<li class="y">Jalebi</li>
+					<li class="y">Poha</li>
+				</ul>
+			</li>
+			<li class="x" id="s">
+				Services
+				<ul id="sr">
+					<li class="y">Buy</li>
+					<li class="y">Sell</li>
+					<li class="y">Rent</li>
+					<li class="y">Share</li>
+				</ul>
+			</li>
+			<li class="x">About Us</li>
+			<li class="x">Contact Us</li>
+		</ul>
+
+	</body>
+</html>
+
+<!-- also check a116.html -->

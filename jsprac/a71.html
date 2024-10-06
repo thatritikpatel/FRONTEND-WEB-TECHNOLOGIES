@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<form action="a11.html" onsubmit="checkForm()">
+			Email: <input type="text" name="eml" id="eml"><br><br>
+			<input type="submit" value="Send">
+		</form>
+
+		<script>		
+			var eml = document.getElementById('eml');
+			
+			function checkForm(){
+				if(eml.value.trim()==''){
+					return false;
+				}		
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<textarea onkeyup="keyUp(this)"></textarea>
+		<br><br>
+		<span id="x">0</span>
+
+		<script>
+			var maxLen = 20;
+			var x = document.getElementById('x');			
+			
+			function keyUp(fld){
+				var fldVal = fld.value;
+
+				if(fldVal.length<=20){
+					x.innerHTML = fldVal.length;
+				}else{
+					fld.value = fldVal.substring(0,fldVal.length-1);
+				}
+			}
+		</script>
+	</body>
+</html>

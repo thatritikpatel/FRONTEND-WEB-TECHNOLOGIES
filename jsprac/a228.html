@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>
+	
+	//ReferenceError: x is not defined
+	//console.log('-----1----',x);
+
+	function pro(){
+		console.log('-----2----',x);
+
+		{
+			//block level variable
+			var x = 2;
+			console.log('-----3----',x);
+		}
+
+		console.log('-----4----',x);
+	}
+
+	pro();
+	
+	//ReferenceError: x is not defined
+	//console.log('-----5----',x);
+
+		
+  </script>
+ </body>
+</html>

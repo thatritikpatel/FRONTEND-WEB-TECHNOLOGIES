@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			table{
+				border: 1px solid red;
+				width: 30%;
+				margin: 20px auto;
+				border-collapse: collapse;
+			}
+
+			td{
+				border: 1px solid red;
+			}
+
+			.a{
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="a">
+					<input type="checkbox" id="x" onclick="selectAll()">
+				</td>
+				<td>Select All</td>
+			</tr>
+			<tr>
+				<td class="a"><input type="checkbox" name="food" value="poha"></td>
+				<td>Poha</td>
+			</tr>
+			<tr>
+				<td class="a"><input type="checkbox" name="food" value="jalebi"></td>
+				<td>Jalebi</td>
+			</tr>
+			<tr>
+				<td class="a"><input type="checkbox" name="food" value="samosa"></td>
+				<td>Samosa</td>
+			</tr>
+		</table>
+
+		<script>
+			var selAll = document.getElementById('x');
+
+			var allChk = document.getElementsByName('food');
+
+			function  selectAll(){
+				for(var y of allChk){
+					y.checked = true;
+				}
+			}
+		</script>
+	</body>
+</html>

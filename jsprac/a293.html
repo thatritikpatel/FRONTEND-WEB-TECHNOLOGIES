@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	class A{
+		constructor(a1){
+			this.a1 = a1;
+		}
+
+		aaa(){
+			console.log('aaa in A');
+		}
+	}
+
+	class B extends A{
+		constructor(a1,b1){
+			super(a1);
+			this.b1 = b1;
+		}
+
+		bbb(){
+			console.log('bbb in B');
+		}
+	}
+
+	let x = new B(10,20);
+	x.aaa();
+	x.bbb();
+	console.log(x);
+
+
+
+
+  </script>
+ </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	class User{
+		addName(name){
+			this.name = name;
+
+			return this;
+		}
+		
+		addEmail(email){
+			this.email = email;
+
+			return this;
+		}
+
+		addPhone(phone){
+			this.phone = phone;
+
+			return this;
+		}
+	}
+
+	let u = new User();
+	
+	console.log(u);
+
+	u.addName('J SAI DEEPAK').addEmail('sai@gmail.com').addPhone('8888888888');
+	
+	console.log(u);
+
+  </script>
+ </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Hello</title>	
+	</head>
+
+	<body>	
+
+		<script>
+			var studentRecords = [
+							{name:'mohan',marks:12},
+							{name:'sohan',marks:45},
+							{name:'rohan',marks:32},
+							{name:'mohan',marks:23},
+							{name:'ganesh',marks:50},
+							{name:'mohan',marks:20}
+						  ];
+			
+			var result = studentRecords.reduce((acc,curr)=>{
+							if(curr.name==='mohan'){
+								acc += curr.marks;
+							}
+						
+							return acc;
+						 },0);
+
+			console.log(result);
+		</script>
+	</body>
+</html>

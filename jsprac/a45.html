@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			table{
+				border:  1px solid black;
+				margin: 12px auto;
+				border-collapse: collapse;
+			}
+
+			td{
+				border:  1px solid black;
+				padding: 10px 20px;
+				font-size: 20px;
+				font-family: verdana;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="a">
+		</table>
+		<input type="button" value="Show Next Record" onclick="showNext()">
+
+		<script>
+			var arr = new Array('Mohan','Ganesh','Vikas','Sudheer','Mayank');
+			
+			var t = document.getElementById('a');
+
+			var i = 0;
+
+			function showNext(){
+				var row = document.createElement('tr');	
+				
+				var cell = document.createElement('td');
+
+				cell.innerHTML = arr[i++];
+
+				if(i==arr.length){
+					i = 0;
+				}
+
+				row.appendChild(cell);
+
+				t.appendChild(row);
+			}
+		</script>
+	</body>
+</html>

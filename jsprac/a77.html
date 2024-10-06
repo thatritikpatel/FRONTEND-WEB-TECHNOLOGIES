@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			input{
+				font-size: 20px;
+				padding: 5px 8px;
+				border: 1px solid #ccc;
+				border-radius: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		User Name: <br>
+		<input type="text" 
+			   name="uname" 
+			   onfocus="unamefocus(this)"
+			   onblur="unameBlur(this)">
+
+		<script>
+			function unameBlur(ufld){
+				ufld.style.backgroundColor = 'white';
+			}
+			
+			function unamefocus(ufld){
+				ufld.style.backgroundColor = 'yellow';
+			}
+		</script>
+	</body>
+</html>

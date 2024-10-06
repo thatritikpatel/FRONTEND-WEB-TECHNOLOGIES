@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1>Hello</h1>
+
+		<script>
+			//hoisting
+			//var act;
+
+			act();
+
+			//Function Declaration: Case 1:
+			/*
+			function act(){
+				console.log('hi');
+			}*/
+			
+			//Function Expression: Case 2:
+			var act = function(){
+						console.log('hi');
+					  };
+
+			
+			act();
+		</script>
+	</body>
+</html>

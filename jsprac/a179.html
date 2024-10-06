@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			.a{
+				border: 1px solid red;
+				color: color;
+				padding: 10px;
+				text-align: center;
+			}
+
+			.b{
+				border: 1px solid green;
+				color: green;
+				padding: 10px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<p>some special error</p>
+		<p>experience the success</p>
+		<p>error in my code</p>
+		<p>success is sure</p>
+		<p>the error is generated</p>
+		<p>we want success with fame</p>
+
+		<!-- <input type="button" value="Action" id="x"> -->
+
+		<script>
+			var paras = document.querySelectorAll('p');
+			
+			//paras.forEach(para=>{console.log(para)});
+
+			paras.forEach(para=>{
+									//console.log(para);
+									//console.log(para.textContent)
+									//console.log(para.textContent.includes('error'));
+									if(para.textContent.includes('error')){
+										para.classList.add('a');
+									}else{
+										para.classList.add('b');
+									}
+								});
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>		
+		<img src="images/dora.jpg">
+		<img src="images/2.png">
+		<img src="images/3.png">
+		<img src="images/4.png">
+		<img src="images/5.jpg">
+
+
+		<script>
+			//var t = document.getElementsByTagName('img');
+			//var t = document.querySelectorAll('img');
+			var t = document.images;
+			//alert(t);
+			//alert(t.length);
+			for(var i=0;i<t.length;i++){
+				alert(t[i].src);
+			}
+		</script>
+	</body>
+</html>

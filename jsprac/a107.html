@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<strong>Press:</strong><br> 
+		1 for option A<br>
+		2 for option B<br>
+		3 for option C<br>
+		-&gt;<input type="text" id="x"><br><br>
+
+		<input type="button" value="Submit" onclick="processRequest()">
+
+		<script>
+			var x = document.getElementById('x');	
+
+			function processRequest(){
+				var val = x.value;
+
+				switch(val){
+					case '1':
+						console.log('option 1 served');
+					case '2':
+						console.log('option 2 served');
+					case '3': 
+						console.log('option 3 served');	
+					default:
+						console.log('No Such Option');
+				}
+			}
+		</script>
+	</body>
+</html>

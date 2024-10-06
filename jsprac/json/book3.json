@@ -1,0 +1,14 @@
+[
+   {
+	"title": "Django3",
+	"price": 1400
+   },
+   {
+	"title": "Python3",
+	"price": 3600
+   },
+   {
+	"title": "JavaScript3",
+	"price": 1800
+   }
+]

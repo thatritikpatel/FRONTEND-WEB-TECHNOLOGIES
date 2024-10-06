@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1 id="x">aaa</h1>
+
+		<script>
+			var x = {
+						'name':'mohan',
+						age:12,
+						address:'Jabalpur',
+						email:'mohan@gmail.com',
+						password:'3456',
+						login(){ //method
+								  console.log(`Name: ${this.name} Age: ${this.age} Current-Object: ${this}`);
+							   },
+						signup(){
+									console.log(`Email: ${this['email']}`)
+								}
+					};
+
+			for(prop in x){ //for-in to iterate over properties of an object
+				//console.log(prop,typeof prop);
+				//console.log(x.prop);
+				console.log(x[prop],typeof x[prop]);
+			}
+		</script>
+	</body>
+</html>

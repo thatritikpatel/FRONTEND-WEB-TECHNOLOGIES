@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>JS Examples</title>
+	</head>
+	<body>
+
+		<script>
+			var records = [
+							{name:'samosa',price:12},
+							{name:'jalebi',price:10},
+							{name:'vadapaw',price:18},
+							{name:'poha',price:5},
+							{name:'kachori',price:22}
+						  ];
+
+			console.log(records);
+			
+			//Case 1:
+			/*
+			var filtered = records.filter(rec=>rec.price>10);
+			var discounted = filtered.map(rec => `The ${rec.name} is now Rs.:${rec.price/2}`);
+			*/
+
+			//Case 2:
+			var discounted = records.filter(rec=>rec.price>10).map(rec => `The ${rec.name} is now Rs.:${rec.price/2}`);
+
+			console.log(discounted);
+		</script>
+	</body>
+</html>

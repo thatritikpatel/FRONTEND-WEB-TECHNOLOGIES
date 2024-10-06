@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1 id="a" class="x">Text 1</h1>
+		<h1 id="b" class="x">Text 2</h1>
+		<p id="c">Text 3</p>
+		<h1 id="d">Text 4</h1>
+		<p id="e" class="x">Text 5</p>
+		
+		<script>
+			var x = document.getElementsByTagName('p');
+			
+			alert(x[0].innerHTML);
+			alert(x[1].innerHTML);
+		</script>
+	</body>
+</html>

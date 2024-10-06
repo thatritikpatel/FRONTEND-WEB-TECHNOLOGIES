@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>My Web Page</title>
+	</head>
+	<body>
+		<fieldset style="width:700px;
+						 border: 1px solid #dbdbdb;
+						 border-radius:10px;
+						 margin:50px auto;">
+			<legend>Personal Info</legend>
+			<form action="a55.html" method="get" id="user_form">
+				<table style="
+							  font-family:verdana;
+							  width:100%;
+							  height:500px;
+							  
+							  color:#515151;">
+					
+					<tr>
+						<td width="50%" align="right">
+							<label for="unm">User Name:</label> 
+						</td>
+						<td width="50%">
+							<input type="text" id="unm">	
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<label for="pwd">Password:</label> 
+						</td>
+						<td>
+							<input type="password" id="pwd">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<label>Gender:</label> 
+						</td>
+						<td>
+							<input type="radio" name="gen" value="m" id="gen1">
+							<label for="gen1">Male</label>
+							&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="gen" value="f" id="gen2">
+							<label for="gen2">Female</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="right">
+							<label for="age">Age:</label> 
+						</td>
+						<td width="50%">
+							<input type="number" id="age">	
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="reset">
+							<input type="submit" >
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+		<fieldset style="width:700px;
+						 border: 1px solid #dbdbdb;
+						 border-radius:10px;
+							  margin:50px auto;">
+			<legend>Contact Info</legend>
+			<form action="a12.html">
+				<table style="
+							  font-family:verdana;
+							  width:100%;
+							  height:500px;
+							  color:#515151;">
+					<tr>
+						<td align="right">
+							<label for="eml">Email:</label> 
+						</td>
+						<td>
+							<input type="email" id="eml">
+						</td>
+					</tr>				
+					<tr>
+						<td align="right" valign="top">
+							<label for="msg">Address:</label> 
+						</td>
+						<td>
+							<textarea name="msg" id="msg" rows="5" cols="20"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<label for="ct">City:</label> 
+						</td>
+						<td>
+							<select name="city" id="ct">
+								<option>Select City</option>
+								<option>Jabalpur</option>
+								<option>Jagdalpur</option>
+								<option>Jaipur</option>
+								<option>Kanpur</option>
+								<option>Nagpur</option>
+							</select>
+						</td>
+					</tr>	
+					<tr>
+						<td colspan="2" align="center">
+							<input type="reset">
+							<input type="submit" >
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+		<fieldset style="width:700px;
+						 border: 1px solid #dbdbdb;
+						 border-radius:10px;
+							  margin:50px auto;">
+			<legend>Other Info</legend>
+			<form>
+				<table style="
+							  font-family:verdana;
+							  width:100%;
+							  height:500px;
+							  color:#515151;">
+					<tr>
+						<td align="right">
+							<label>Food Options:</label> 
+						</td>
+						<td>
+							<input type="checkbox" name="food" value="Samosa" id="food1">
+							<label for="food1">Samosa</label>
+							&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="food" value="Poha" id="food2">
+							<label for="food2">Poha</label>
+							&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="food" value="Jalebi" id="food3">
+							<label for="food3" form="user_form">Jalebi</label>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<label>Movie Options:</label> 
+						</td>
+						<td>
+							<input type="checkbox" name="movie" value="A Movie" id="mv1">
+							<label for="mv1">A Movie</label>
+							&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="movie" value="B Movie" id="mv2">
+							<label for="mv2">B Movie</label>
+							&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="movie" value="C Movie" id="mv3">
+							<label for="mv3" form="user_form">C Movie</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="reset">
+							<input type="submit" >
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>							
+	</body>
+</html>

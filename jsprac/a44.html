@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			#a{
+				border: 1px solid red;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn" value="Next" onclick="showNextImage()">
+		<br><br>
+		<div id="a"></div>
+
+		<script>
+			var arr = ['2.png','3.png','4.png','5.jpg','1.jpg'];
+						
+			var dv = document.getElementById('a')
+			
+			var i = 0;
+
+			function showNextImage(){
+				var m = document.createElement('img');
+				m.src = 'images/'+arr[i++];
+
+				if(i==arr.length){
+					i = 0;
+				}
+
+				dv.appendChild(m);
+			}
+		</script>
+	</body>
+</html>

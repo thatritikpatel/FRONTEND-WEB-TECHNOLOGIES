@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		
+		<style>
+			body{
+				font-family: verdana;
+			}
+
+			#x{
+				border: 1px solid #d2d2d2;
+				border-radius: 5px;
+				padding: 10px;
+				width: 60%;
+			}
+
+			#y{
+				border: 1px solid #d2d2d2;
+				border-radius: 5px;
+				padding: 10px;
+				float: right;
+				width: 35%;
+			}
+
+			.a{
+				margin-bottom: 5px;
+			}
+
+			#w{
+				padding: 10px;
+
+			}
+
+			.b{
+				border: 1px solid #09aa14;
+				border-radius: 5px;
+				padding: 5px 8px;
+				background-color: #09aa14;
+				color: white;
+				margin-left: 5px;
+				margin-bottom: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="w">
+			<input type="button" value="+" onclick="addNew()">
+			<input type="button" value="Check Odd" onclick="processRecords()">
+		</div>
+		
+		<div>
+			<div id="y"></div>
+			<div id="x"></div>			
+		</div>
+		
+		<script>
+			var x = document.getElementById('x');
+			var y = document.getElementById('y');
+			
+			function addNew(){
+				var inp = document.createElement('input');
+				inp.className = 'a';
+				x.appendChild(inp);
+				var nl = document.createElement('br');
+				x.appendChild(nl);
+			}
+
+			function processRecords(){
+				var recs = document.querySelectorAll('.a');
+
+				for(i=0;i<recs.length;i++){
+					var val = parseInt(recs[i].value);
+					if(val%2!=0){
+						var dv = document.createElement('div');
+						dv.className = 'b';
+						dv.innerHTML = val;
+						y.appendChild(dv);
+						continue;
+					}
+					console.log(recs[i].value);
+				}
+			}
+		</script>
+	</body>
+</html>

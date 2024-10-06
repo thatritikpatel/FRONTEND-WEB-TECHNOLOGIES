@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			#a{
+				border: 1px solid red;
+				width: 90%;
+				height: 450px;
+				margin: 20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a"></div>
+		<h1 id="b"></h1>
+
+		<script>
+			var a = document.getElementById('a');
+			a.onmousemove = mouseCoords;	
+
+			var b = document.getElementById('b');
+			
+			function mouseCoords(e){
+				//console.log(e);	
+				b.innerHTML = '('+e.offsetX+'-'+e.offsetY+')';
+			}
+		</script>
+	</body>
+</html>

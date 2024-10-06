@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<form action="#">
+			First Name: <input type="text" value="Yamraj"><br><br>
+			Last Name: <input type="text" value="Kumar"><br><br>
+			Mobile: <input type="text" value="0000000000"><br><br>
+			Email: <input type="email"><br><br>
+			Password: <input type="password"><br><br>
+			Food Options: <br><br>
+			Samosa: <input type="checkbox"><br><br>
+			Poha: <input type="checkbox"><br><br>
+			Jalebi: <input type="checkbox"><br><br>
+
+			City:<select>
+					<option>Jabalpur</option>
+					<option>Bhopal</option>
+					<option>Indore</option>
+					<option>Gwalior</option>
+					<option>Panna</option>
+				 </select><br><br>
+			Message: <textarea></textarea>
+			<input type="submit" value="Register">	
+		</form>
+
+		<script>                            			
+			var w = document.querySelectorAll('[type=text]');
+			
+			for(var i=0;i<w.length;i++){
+				//document.write('<h1>'+w[i].value+'</h1>');
+				alert(w[i].value);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			.a{
+				font-size: 48px;
+				padding: 20px;
+				border: 1px solid #555;
+				width: 10%;
+			}
+
+			.b{
+				border-color: #66ff33;
+				background-color: #f72454;
+				color: #fff;
+				width: 50%;
+			}
+
+			.c{
+				width: 70%;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="w" class="a">some special error</p>
+		<p id="x" class="a b">experience the success</p>
+		<p id="y" class="a">error in my code</p>
+		<p id="z" class="a b c">success is sure</p>
+
+		<input type="button" value="Action on 3rd Para" id="btn1">
+		<input type="button" value="Action on 4th Para" id="btn2">
+
+		<script>
+			var w = document.querySelector('#w');
+			var x = document.querySelector('#x');
+			var y = document.querySelector('#y');
+			var z = document.querySelector('#z');
+
+			var btn1 = document.querySelector('#btn1');
+			var btn2 = document.querySelector('#btn2');
+			
+			btn2.addEventListener('click',()=>{
+												z.classList.remove('c');	
+											  });
+			
+			
+			btn1.onclick = action;
+
+			function action(){
+				//y.className = 'b';
+				//y.className += ' b';
+				y.classList.add('b');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		Enter a Number: <input type="number" id="x">
+
+		<br><br>
+
+		<input type="button" value="Submit" onclick="sayHello()">
+
+		<script>
+			var x = document.getElementById('x');					
+			
+			function sayHello(){
+				console.log(typeof x.value);	
+				var val = parseInt(x.value);
+				console.log(typeof val);
+				console.log('------------');
+
+				for(var i=0;i<val;i++){
+					console.log(i);
+				}
+			}
+		</script>
+	</body>
+</html>

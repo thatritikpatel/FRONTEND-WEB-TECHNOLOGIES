@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			body{
+				font-family: verdana;
+			}
+
+			#popup_box{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+				display: none;
+			}
+
+			#popup{
+				padding: 10px;
+				border: 0;
+				width: 400px;
+				margin: 100px auto;
+				position: relative;
+				background-color: #fff;
+			}
+
+			#ttl{
+				text-align: center;
+			}
+
+			#msg{
+				padding: 10px;
+				text-align: center;
+			}
+
+			#close{
+				height: 30px;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="popup_box">
+			<div id="popup">
+				<img id="close" src="images/close.jpg">
+				<h3 id="ttl">Welcome to ISRDC!</h3>
+				<p id="msg">New Batches will start from tomorrow...</p>
+			</div>
+		</div>
+		
+		<input type="button" value="Show Records">
+		<div id="a">
+			<h1>Hello text</h1>
+			<p>some imp information</p>
+			<p>we are working on js</p>
+			<p>bharat china war</p>
+			<p>play cricket</p>
+			<div>swimming is easy</div>
+		</div>
+
+		<script>
+			var popbox = document.querySelector('#popup_box');
+			var close = document.getElementById('close');
+
+			setTimeout(()=>{popbox.style.display='block';},5000);
+
+			close.addEventListener('click',()=>{popbox.style.display='none';});
+
+			popbox.addEventListener('click',()=>{popbox.style.display='none';})
+		</script>
+	</body>
+</html>

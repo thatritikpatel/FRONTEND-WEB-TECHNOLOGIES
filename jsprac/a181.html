@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			.x{
+				color: green;
+				font-size: 38px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<h1>Hello text</h1>
+			<p>some imp information</p>
+			<p>we are working on js</p>
+			<p>bharat china war</p>
+			<p>play cricket</p>
+			<div>swimming is easy</div>
+		</div>
+
+		<script>
+			var dv = document.getElementById('a');
+
+			var recs = dv.children;
+			//var recs = dv.childNodes;
+
+			console.log(recs);
+
+			//recs.forEach((rec)=>{console.log('+++')});
+			//failed because recs is a HTMLCollection
+
+			//var arr = Array.from(recs);
+			//arr.forEach((ar)=>{console.log(ar,'---')});
+			//arr.forEach((ar)=>{ar.className = 'x';});
+			//arr.forEach((ar)=>{ar.classList.add('x');});
+		</script>
+	</body>
+</html>

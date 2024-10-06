@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	//localStorage.setItem('college','JEC');
+	//localStorage.setItem('branches',3);
+
+	const college = localStorage.getItem('college');
+	const branches = localStorage.branches;
+	console.log(college,branches);
+	
+	localStorage.setItem('college','Global');
+	localStorage.branches = 10;
+	
+	console.log(localStorage.college,localStorage.branches)
+
+  </script>
+ </body>
+</html>

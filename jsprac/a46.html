@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			table{
+				border:  1px solid black;
+				margin: 12px auto;
+				border-collapse: collapse;
+			}
+
+			td{
+				border:  1px solid black;				
+				font-size: 20px;				
+			}
+
+			a{
+				font-family: verdana;
+				color: #484848;
+				background-color: #fff;
+				padding: 10px 20px;
+				width: 80px;
+				display: inline-block;
+				text-decoration: none;
+			}
+			
+			a:hover{
+				color: #fff;
+				background-color: #484848;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table id="a">
+		</table>
+		<input type="button" value="Show Next Record" onclick="showNext()">
+
+		<script>
+			var arr = new Array('Mohan','Ganesh','Vikas','Sudheer','Mayank');
+			var ar = new Array('a11.html','a12.html','a13.html','a14.html','a15.html')
+
+			var t = document.getElementById('a');
+
+			var i = 0;
+
+			function showNext(){
+				var row = document.createElement('tr');	
+				
+				var cell = document.createElement('td');
+
+				cell.innerHTML = '<a href="'+ar[i]+'">'+arr[i]+'</a>';
+				i++;				 
+
+				if(i==arr.length){
+					i = 0;
+				}
+
+				row.appendChild(cell);
+
+				t.appendChild(row);
+			}
+		</script>
+	</body>
+</html>

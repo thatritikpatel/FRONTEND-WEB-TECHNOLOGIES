@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>JS Examples</title>
+	</head>
+	<body>
+
+		<script>
+			var records = [
+							{name:'mukesh',age:25},
+							{name:'om',age:34},
+							{name:'gyan',age:23},							
+							{name:'vishesh',age:29},
+							{name:'saral',age:22},
+							{name:'ritik',age:32}
+						  ];
+
+			console.log(records);
+
+			
+			records.sort(compare);
+			
+			//Case 1:
+			/*
+			function compare(x,y){
+				if(x.age>y.age){
+					return 1;
+				}else if(x.age<y.age){
+					return -1;
+				}else{
+					return 0;
+				}
+			}*/
+
+			//Case 2:
+			function compare(x,y){
+				return x.age-y.age;
+			}
+
+			console.log(records);
+		</script>
+	</body>
+</html>

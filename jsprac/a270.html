@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	let obj1 = {
+		name: 'mohan',
+		age: 12,
+		login(){
+			console.log('logging in...');
+		},
+		logout(){
+			console.log('logged out...');
+		}	
+	};
+
+	console.log(obj1.name,obj1.age);
+
+	obj1.login();
+	obj1.logout();
+
+	let obj2 = {
+		name: 'dinesh',
+		age: 21,
+		login(){
+			console.log('logging in...');
+		},
+		logout(){
+			console.log('logged out...');
+		}	
+	};
+
+	console.log(obj2.name,obj2.age);
+	obj2.login();
+	obj2.logout();
+	
+
+	console.log(obj1);
+	console.log(obj2);
+  </script>
+ </body>
+</html>

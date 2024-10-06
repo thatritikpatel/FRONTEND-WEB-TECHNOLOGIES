@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		
+		<style>
+			#x{
+				border: 1px solid red;
+				padding: 10px;
+			}
+
+			#y{
+				border: 1px solid green;
+				padding: 10px;
+			}
+
+			.a{
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="x">
+		
+		</div>
+
+		<br>
+
+		<input type="button" value="+" onclick="addNew()">
+		
+		<br><br>
+		
+		<input type="button" value="Check Odd" onclick="processRecords()">
+		
+		<br><br>
+		
+		<div id="y"></div>
+
+		
+		<script>
+			var x = document.getElementById('x');
+			var y = document.getElementById('y');
+			
+			function addNew(){
+				var inp = document.createElement('input');
+				inp.className = 'a';
+				x.appendChild(inp);
+				var nl = document.createElement('br');
+				x.appendChild(nl);
+			}
+
+			function processRecords(){
+				var recs = document.querySelectorAll('.a');
+
+				for(i=0;i<recs.length;i++){
+					var val = parseInt(recs[i].value);
+					if(val%2!=0){
+						var dv = document.createElement('div');
+						dv.style.border = '1px solid blue';
+						dv.style.marginRight = '10px';
+						dv.innerHTML = val;
+						y.appendChild(dv);
+						continue;
+					}
+					console.log(recs[i].value);
+				}
+			}
+		</script>
+	</body>
+</html>

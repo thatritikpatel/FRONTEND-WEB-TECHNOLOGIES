@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1>Hello</h1>
+		<h1>Hi</h1>
+		<h1>Bye</h1>
+		<h1>Namaskar</h1>
+
+
+		<script>
+			//var r = document.getElementsByTagName('h1');
+			var r = document.querySelectorAll('h1');
+			alert(r);
+			for(var tmp of r){
+				alert(tmp.innerHTML);
+			}
+		</script>
+	</body>
+</html>

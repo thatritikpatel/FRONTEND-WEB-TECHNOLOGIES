@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			input{
+				font-size: 20px;
+				padding: 5px 8px;
+				border: 1px solid #ccc;
+				border-radius: 7px;
+			}
+
+			#msg{
+				color: red;
+				border: 1px solid red;
+				padding: 7px 12px;
+				background-color: #fff9f7;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		User Name: <br>
+		<input type="text" 
+			   name="uname" 
+			   onfocus="unamefocus(this)"
+			   onblur="unameBlur(this)">
+
+		<span id="msg">Incorrect Value</span>
+
+		<script>
+			var msg = document.getElementById('msg');
+
+			function unameBlur(ufld){
+				var fldVal = ufld.value.trim();
+				if(fldVal==''){
+					ufld.style.backgroundColor = '#ffdbdb';
+				}else{
+					if(Number(fldVal)){
+						ufld.style.backgroundColor = '#ffdbdb';
+						msg.style.display = 'inline';
+					}else{
+						ufld.style.backgroundColor = '#ebffe8';
+					}					
+				}
+			}
+			
+			function unamefocus(ufld){
+				ufld.style.backgroundColor = 'yellow';
+				msg.style.display = 'none';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>	
+	function User(name,age){
+		this.name = name;
+		this.age = age;
+
+		this.login = function(){
+			console.log('logging in.........')
+		};
+	}
+	
+	let x = new User('mohan',12);
+
+	console.log(x.name,x.age);
+
+	//console.log(x);
+
+	x.login();
+
+	
+  </script>
+ </body>
+</html>

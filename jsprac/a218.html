@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>JS Examples</title>
+	</head>
+	<body>
+
+		<script>
+			var records = [78,23,120,52,19,9,34];
+
+			console.log(records);
+			
+			records.sort(compare);
+
+			function compare(x,y){
+				return x-y;
+			}
+
+			console.log(records);
+		</script>
+	</body>
+</html>

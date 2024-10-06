@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<h1 id="x"></h1>	
+		<h1 id="y"></h1>	
+
+		<input type="button" value="Show" onclick="changeXyz()">
+
+		<script>
+			var x = document.getElementById('x');
+			var y = document.getElementById('y');			
+
+			function changeXyz(){
+				var date = new Date();
+				
+				x.innerText = date;
+				
+				//date.setDate(4);
+				//date.setMonth(0);
+				//date.setYear(123);
+				//date.setFullYear(2024);
+				//date.setHours(8);
+				//date.setMinutes(55);
+				date.setDate(date.getDate()+4);
+				
+				y.innerText = date;
+			}
+		</script>
+	</body>
+</html>

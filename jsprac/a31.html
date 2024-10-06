@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<table border="1" width="40%" align="center" id="x">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</table>
+
+
+		<script>
+			var tbl = document.getElementById('x');
+			//alert(tbl);
+			//alert(tbl.length);
+			
+			//var rows = document.getElementsByTagName('tr');
+			//or
+			//var rows = tbl.getElementsByTagName('tr');
+			
+			alert(rows);
+			alert(rows.length);
+			for(var i=0;i<rows.length;i++){
+				alert(rows[i].innerHTML);
+			}
+		</script>
+	</body>
+</html>

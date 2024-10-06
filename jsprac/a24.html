@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+	</head>
+	<body>
+		<table border="1" width="100%">
+			<tr>
+				<td width="50%" align="center" id="aa">
+					<form action="signup">
+						First Name: <input type="text" value="Yamraj"><br><br>
+
+						Last Name: <input type="text" value="Kumar"><br><br>
+						
+						Mobile: <input type="text" value="0000000000"><br><br>
+						
+						Email: <input type="email"><br><br>
+						
+						Password: <input type="password"><br><br>
+						
+						Food Options: <br><br>
+						
+						Samosa: <input type="checkbox"><br><br>
+						
+						Poha: <input type="checkbox"><br><br>
+						
+						Jalebi: <input type="checkbox"><br><br>
+
+						City:<select>
+								<option>Jabalpur</option>
+								<option>Bhopal</option>
+								<option>Indore</option>
+								<option>Gwalior</option>
+								<option>Panna</option>
+							 </select><br><br>
+						
+						Message: <textarea></textarea><br><br>
+						
+						<input type="submit" value="Register">	
+					</form>
+				</td>
+				<td width="50%" align="center" id="bb">
+					<form action="signin">
+						Email: <input type="email"><br><br>
+
+						Password: <input type="password"><br><br>
+
+						<input type="submit" value="SignIn">
+					</form>
+				</td>
+			</tr>
+		</table>
+
+		<script>                            			
+			//Case 2:
+			/*
+			var cell = document.getElementById('bb');	
+			var inps = cell.getElementsByTagName('input');
+			alert(inps.length);
+			*/
+
+			//Case 1:
+			/*
+			var r = document.getElementsByTagName('input');
+			alert(r.length);*/
+		</script>
+	</body>
+</html>

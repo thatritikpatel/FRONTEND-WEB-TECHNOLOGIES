@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+		<style>
+			img{
+				height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/f1.png">
+		
+		<script>
+			var img = document.querySelector('img');
+
+			var intv = setInterval(disolve,500);
+			
+			var op = 0.9;
+			function disolve(){
+				img.style.opacity = op;
+				op -= 0.1;
+				console.log(op);
+				if(op<0){
+					console.log(op,'----');
+					clearInterval(intv);
+					img.style.opacity = 1;
+				}
+			}
+		</script>
+	</body>
+</html>

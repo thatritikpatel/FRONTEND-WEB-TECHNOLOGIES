@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>	
+	<head>
+		<title>JS Example</title>
+
+		<style>
+			#y{
+				font-size: 48px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/2.png" id="x" onmouseover="imageOver(this)" onmouseout="imageOut(this)">
+
+		<br><br>
+
+		<span id="y">No Action</span>
+
+		<script>
+			var y = document.getElementById('y');
+
+			function imageOver(curElm){
+				curElm.style.border = '1px solid red';
+				y.innerHTML = 'Over';	
+			}
+
+			function imageOut(curElm){
+				curElm.style.border = 'none';
+				y.innerHTML = 'Out';
+			}
+		</script>
+	</body>
+</html>
